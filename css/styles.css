@@ -76,7 +76,7 @@ color: var(--secundary-text-color);
 
 .hero-section{
     background-color: var(--dark-background-color);
-    padding: 200px 452px 280px 452px ;
+    
 
 }
 
@@ -259,6 +259,7 @@ ul{
 .header-container{
     display: flex;
     align-items: center;
+   
 }
 .navigation-list{
     display: flex;
@@ -281,7 +282,7 @@ ul{
 
 }
 
-.header-contacts{
+.header-contacts-list{
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -293,9 +294,17 @@ ul{
 
 }
 
-.header-item-link{
+.header-contacts-link{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+}
+
+/*Hero*/
+
+.hero-section-two{
+    padding-top: 200px;
+    padding-bottom: 280px;
 
 }
