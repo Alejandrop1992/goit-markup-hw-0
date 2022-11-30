@@ -111,12 +111,14 @@ background-color: var(--accent-color);
 cursor: pointer;
 
 
+
 }
 
 .hero-button:hover,
 .hero-button:focus{
     color: tomato;
     background-color: darkblue;
+    
 }
 
 .content-title{
@@ -148,6 +150,10 @@ color: var(--secundary-text-color);
     line-height: calc(42/36);
     letter-spacing: 0.03em;
     color: var(--primary-title-color);
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+
 }
 
 .team-member{
@@ -310,6 +316,27 @@ ul{
     padding-bottom: 32px;
 
 }
+.our-feature{
+    text-align: center;
+}
+
+.paragraf-list{
+    display: flex;
+}
+
+.lists-paragrafs{
+    margin-right: 30px; 
+    margin-top: 20px;
+}
+
+.features-list{
+    display: flex;
+}
+
+.features-item:not(:last-child){
+    margin-right: 30px;
+
+}
 
 .image-section{
     padding-top: 94px;
@@ -322,12 +349,21 @@ ul{
 .image-list{
     display: flex;
 }
-
-.features.list{
-    display: flex;
+.image-item{
+    width: 270px;
 }
-
-.features.item:not(:last-child){
+.image-item:not(:last-child){
     margin-right: 30px;
-
 }
+
+.image-item-description{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: var(--light-background-color);
+}
+
+.name{
+    margin-bottom: 10px;
+}
+
