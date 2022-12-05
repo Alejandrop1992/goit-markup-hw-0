@@ -109,6 +109,10 @@ letter-spacing: 0.06em;
 color: var(--secundary-title-color);
 background-color: var(--accent-color);
 cursor: pointer;
+display: block;
+margin: auto;
+border-radius: 10px;
+
 
 
 
@@ -130,6 +134,7 @@ cursor: pointer;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-title-color);
+    margin-bottom: 10px;
 
 }
 
@@ -153,6 +158,7 @@ color: var(--secundary-text-color);
     margin-top: 15px;
     margin-bottom: 20px;
     text-align: center;
+    padding: 5px;
 
 }
 
@@ -318,6 +324,7 @@ ul{
 }
 .our-feature{
     text-align: center;
+    display: none;
 }
 
 .paragraf-list{
@@ -365,5 +372,10 @@ ul{
 
 .name{
     margin-bottom: 10px;
+}
+
+.container-footer{
+    padding-right:0.2rem;
+    padding-left: 0.2rem;
 }
 
