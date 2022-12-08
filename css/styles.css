@@ -27,7 +27,7 @@ font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 letter-spacing: 0.03em;
-color: var(--primary-text-color);
+color: var(--light-background-color);
 }
 
 /* Header*/
@@ -39,7 +39,12 @@ font-weight: 700;
 font-size: 26px;
 line-height: calc(31/26);
 color: var(--accent-color);
+margin-bottom: 9px;
 
+}
+.logo:hover,
+.logo:focus{
+    text-decoration: underline var(--accent-color);
 }
 
 
@@ -111,17 +116,15 @@ background-color: var(--accent-color);
 cursor: pointer;
 display: block;
 margin: auto;
-border-radius: 10px;
-
-
-
+border-radius: 3px;
+padding: 10px 19px 10px 20px;
 
 }
 
 .hero-button:hover,
 .hero-button:focus{
-    color: tomato;
-    background-color: darkblue;
+    color: var(--secundary-title-color);
+    
     
 }
 
@@ -135,6 +138,7 @@ border-radius: 10px;
     text-transform: uppercase;
     color: var(--primary-title-color);
     margin-bottom: 10px;
+    margin-top: 94px;
 
 }
 
@@ -146,6 +150,9 @@ font-size: 14px;
 line-height: calc(24/14);
 letter-spacing: 0.03em;
 color: var(--secundary-text-color);
+margin-bottom: 100px;
+width: 270px;
+height: 70.54px;
 }
 
 .image-title{
@@ -156,7 +163,7 @@ color: var(--secundary-text-color);
     letter-spacing: 0.03em;
     color: var(--primary-title-color);
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     text-align: center;
     padding: 5px;
 
@@ -181,11 +188,13 @@ line-height: calc(19/16);
 letter-spacing: 0.03em;
 color: var(--secundary-text-color);
 
+
 }
 
 .webstudio-footer{
 
 background-color: var(--dark-background-color);
+padding:60px;
 
 }
 
@@ -201,8 +210,7 @@ color: var(--secundary-title-color);
 
 .address:hover,
 .address:focus{
-    color:blue;
-    background-color: white;
+    text-decoration: underline var(--accent-color);
 }
 
 .opacity{
@@ -212,13 +220,12 @@ font-weight: 400;
 font-size: 14px;
 line-height: calc(24/14);
 letter-spacing: 0.03em;
-color: var(--secundary-title-color);
+color: rgba(255, 255, 255, 0.6);
 }
 
 .opacity:hover,
 .opacity:focus{
-    color:blue;
-    background-color: white;
+   text-decoration: underline var(--accent-color);
 
     }
 .button-all{
@@ -227,10 +234,13 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 border-radius: 4px;
 cursor: pointer;
 color: var(--secundary-title-color);
+width: 73px;
+height: 38px;
+line-height: calc(26/16);
 }
 .button-all:hover,
 .button-all:focus{
-    color: orange;
+    color: var(--accent-color);
     background-color: darkblue;
 }
 
@@ -244,6 +254,7 @@ line-height: calc(26/16);
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
 cursor: pointer;
+height: 38px;
 
 }
 
@@ -265,7 +276,8 @@ ul{
  padding-left: 15px;
  padding-right: 15px;
  margin: 0 auto;
-}
+ 
+ }
 
 /* header */
 
@@ -300,7 +312,7 @@ ul{
 }
 
 .navigation-item-link:hover{
-    color:darkorange;
+    color: var(--accent-color);
 
 }
 
@@ -311,6 +323,7 @@ ul{
 
 }
 
+
 .header-item:not(:last-child){
     margin-right: 50px;
 
@@ -320,11 +333,18 @@ ul{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    color: var(--secundary-text-color);
 
 }
+
+.header-contacts-link:hover,
+.header-contacts-link:focus{
+color: var(--accent-color);
+}
+
 .our-feature{
     text-align: center;
-    display: none;
+    visibility: hidden;
 }
 
 .paragraf-list{
@@ -334,6 +354,11 @@ ul{
 .lists-paragrafs{
     margin-right: 30px; 
     margin-top: 20px;
+}
+
+.lists-paragrafs:not(:last-child){
+    margin-right: 30px; 
+    
 }
 
 .features-list{
@@ -347,17 +372,24 @@ ul{
 
 .image-section{
     padding-top: 94px;
+
 }
 
 .image-section-two{
     padding-top: 94px;
+   
 }
 
 .image-list{
     display: flex;
+  
 }
 .image-item{
     width: 270px;
+    background-color: var(--secundary-title-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 94px;
 }
 .image-item:not(:last-child){
     margin-right: 30px;
@@ -378,4 +410,34 @@ ul{
     padding-right:0.2rem;
     padding-left: 0.2rem;
 }
+
+.button-it{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.boton{
+    margin-left: 10px;
+}
+
+.images-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    
+}
+
+.team-image{
+color: var(--primary-text-color);
+}
+
+.description{
+    color: var(--secundary-text-color);
+    margin-bottom: 94px
+
+}
+
+
+
+
 
